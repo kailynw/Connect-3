@@ -1,9 +1,9 @@
 # Paycheck/Wage Calculator
 
-An Android "paycheck/wage calculaotr" application that calculates your pay based on income, marital status, and location. Also displays deducted tax information, pre-taxed salary, and post tax-salary.
+An Android game that replicates Tic-Tac-Toe and uses smooth animations
 
 # What I Learned
 
-* Developed a user interface within the XML file using Constraint and Relative Layouts, Spinner, SeekBar, RadioButton/RadioGroup.
-* Created a correlation between the state and state tax percentage using a HashMap
-* Integrated visiblity modifiers that change the UI when selcting "Houly" or "Salary" calculation
+* Used the "Magic Square Algorithm" to help create the theory for the game (Ex:Getting a row of the same color)
+* Imported Animation and EventHandler libraries supported by Android Studio to give a realistic feel for the game
+ 
