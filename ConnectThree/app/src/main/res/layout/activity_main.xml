@@ -7,6 +7,26 @@
     android:visibility="visible"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/changePlayerButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="184dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="changePlayer"
+        android:text="CHANGE PLAYER"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/restartButton"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.764" />
+
     <android.support.v7.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="360dp"
@@ -142,7 +162,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -158,14 +178,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
         android:layout_marginBottom="8dp"
         android:onClick="restartGame"
         android:text="RESTART"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/changePlayerButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.764" />
 </android.support.constraint.ConstraintLayout>
